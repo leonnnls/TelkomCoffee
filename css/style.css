@@ -6,7 +6,23 @@
     --bg:#ffffff;
     --border:.1rem solid rgba(255, 0, 0, 0.3);
 }
-
+#cart-btn {
+    position: relative;
+  }
+  
+  .cart-count-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
 * {
     font-family: 'Roboto', sans-serif;
     margin:0; padding:0;
@@ -379,7 +395,7 @@ section {
 }
 
 .products .box-container .box .content .price {
-    color: #fff;
+    color: #000000;
     font-size: 2.5rem;
 }
 
