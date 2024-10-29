@@ -6,22 +6,6 @@
     --bg:#ffffff;
     --border:.1rem solid rgba(255, 0, 0, 0.3);
 }
-#cart-btn {
-    position: relative;
-  }
-  
-  .cart-count-badge {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    background-color: red;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 3px 6px;
-    border-radius: 50%;
-    display: inline-block;
-  }
   
 * {
     font-family: 'Roboto', sans-serif;
