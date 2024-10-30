@@ -202,7 +202,7 @@ section {
     top:1rem; right: 1rem;
     font-size: 2rem;
     cursor: pointer;
-    color: var(--black);
+    color: #000000;
 }
 
 .header .cart-items-container .cart-item .fa-times:hover {
