@@ -235,7 +235,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(../images/hero-section-banner.webp) no-repeat;
+    background:url(../images/Hero-Banner.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
