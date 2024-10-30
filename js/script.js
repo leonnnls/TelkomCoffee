@@ -76,10 +76,11 @@ function addToCart(name, price, imageSrc) {
   });
 }
 
-// Function to update cart count on cart icon
 function updateCartCount() {
-  const cartCount = document.querySelectorAll(".cart-items-container .cart-item").length;
+  const cartContainer = document.querySelector(".cart-items-container");
+  const cartCount = cartContainer.querySelectorAll(".cart-item").length;
   const cartIcon = document.getElementById("cart-btn");
+  const checkoutButton = document.getElementById("checkout-btn");
 
   // If there's no badge, create one
   let badge = cartIcon.querySelector(".cart-count-badge");
@@ -95,8 +96,12 @@ function updateCartCount() {
   // Remove badge if cart is empty
   if (cartCount === 0) {
     badge.remove();
+    checkoutButton.style.display = "none"; // Hide checkout button
+  } else {
+    checkoutButton.style.display = "block"; // Show checkout button
   }
 }
+
 
 // Attach event listener to each "add to cart" button
 document.querySelectorAll(".btn").forEach(button => {
